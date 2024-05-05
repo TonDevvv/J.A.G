@@ -1,0 +1,15 @@
+.pfp{
+    text-align: center;
+}
+
+.pfp img{
+    border-radius: 50%;
+    height: 350px;
+    margin-right: 50px;
+    margin-top: 25px;
+    
+}
+
+.pfp img:hover{
+    transform: scale(1.2);
+}
