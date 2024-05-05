@@ -1,0 +1,329 @@
+
+body{
+    background-color: rgb(218, 217, 217);
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* .nav{
+    background-color: rgb(211, 211, 206);
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav ul li{
+    float: right;
+}
+
+.nav ul li a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+} */
+
+.nav ul li{
+    float: right;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+}
+
+.nav ul li a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 79%;
+    background-color: rgb(211, 211, 206); /* You can adjust the background color as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    transition: top 0.3s ease-in-out; /* Smooth transition for appearing/disappearing */
+}
+
+.nav p{
+    position: absolute; margin-top: 1%;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.nav.hide {
+    top: -100px; /* Move it out of the viewport when hidden */
+}
+
+
+.nav ul li a:hover {
+    color: rgb(255, 255, 255);
+} 
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1f1d1d;
+}
+
+.home_page {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home_page p{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.home_page span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.home_page img {
+    border-radius: 50%;
+    width: 350px;
+    height: auto;
+    margin-bottom: 0px;
+    transition: transform 0.5s ease-in-out  ;
+}
+
+.home_page img:hover {
+    transform: rotate(40deg);
+}
+
+.home_page img:not(:hover) {
+    transform: rotate(0deg);
+}
+
+.home_page .fb img{
+    position: absolute; top: 65%; right: 59%;
+    width: 40px;
+    height: auto;
+}
+
+.home_page .fb img:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project h2{
+    position: absolute;
+    font-size: xx-large;
+}
+
+.project .sql-project p{
+    position: relative; margin-top: 0px;
+}
+
+.project .sql-project{
+    margin-top: 100px;
+    background-color: #8a72242f;
+    border-radius: 20px;
+    padding: 75px 60px;
+    width: 300px;
+    height: 250px;
+    box-shadow: 0px 3px 40px #0000001e;
+    margin-right: 20px;
+}
+
+
+.project .sql-project a {
+    background-color: rgba(153, 155, 30, 0.274);
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    transition-duration: 0.2s;  
+}
+
+.project .sql-project a:hover{
+    color: rgb(0, 255, 0);
+    font-size: 25px;
+    font-weight: bolder;                    
+}
+
+.project .c-project p{
+    position: relative; margin-top: 0px;
+}
+
+.project .c-project{
+    margin-top: 100px;  
+    background-color: #8a72242f;
+    border-radius: 20px;
+    padding: 75px 60px;
+    width: 300px;
+    height: 250px;
+    box-shadow: 0px 3px 40px #0000001e;
+    margin-left: 20px;
+}
+
+.project .c-project a {
+    background-color: rgba(153, 155, 30, 0.274);
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    transition-duration: 0.2s;  
+}
+
+.project .c-project a:hover{
+    color: rgb(0, 255, 0);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.experience{
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience h1{
+    position: absolute;
+}
+
+.experience .exp-images{
+    margin-top: 100px;  
+    margin-left: 20px;
+}
+
+.experience .exp-images img{
+    border-radius: 20px;
+}
+
+.experience .exp-images img:hover{
+    
+}
+     
+
+
+.experience .container{
+    margin-top: 100px;  
+    background-color: #8a72242f;
+    border-radius: 20px;
+    padding: 75px 60px;
+    width: 500px;
+    height: 290px;
+    box-shadow: 0px 3px 40px #0000001e;
+    margin-right: 20px;
+}
+
+
+.experience .exp-images img{
+    margin-left:20px;
+    width: 350px;
+    height: auto;
+    transition: transform 0.2s ease-in-out  ;
+}
+
+
+.experience .exp-images img:hover {
+    transform: scale(1.1);
+}
+
+.experience .exp-images img:not(:hover) {
+    transform: rotate(0deg);
+}
+
+.about_page{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_page h1{
+    position: absolute;
+}
+.about_page .container{
+    margin-top: 100px;
+    background-color: #8a72242f;
+    border-radius: 20px;
+    padding: 50px 60px;
+    width: 400px;
+    height: 250px;
+    box-shadow: 0px 3px 40px #0000001e;
+    margin-left: 20px; 
+}
+
+.about_page .about-img img{
+    margin-top: 100px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.about_page .about-img img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fb img{
+    transition: transform 0.2s ease-in-out  ;
+}
+
+.fb img:hover{
+    transform: scale(1.2);
+}
+
+.fb img{ 
+    border-radius: 50%;
+    height: 50px;
+}
+
+footer{
+    text-align: right;
+}
+
+
+  
